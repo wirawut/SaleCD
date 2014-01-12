@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class name="SaleCD.model.CompanyModel" table="tb_company">
+        <id column="company_id" name="company_id" type="int">
+            <generator class="native"/>
+        </id>
+        <property column="company_name" name="company_name" type="string"/>
+        <property column="company_address" name="company_address" type="string"/>
+        <property column="tel" name="tel" type="string"/>
+        <property column="fax" name="fax" type="string"/>
+        <property column="tax_number" name="tax_number" type="string"/>
+        <property column="date" name="date" type="date"/>
+    </class>
+</hibernate-mapping>
